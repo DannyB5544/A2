@@ -1,0 +1,12 @@
+/* For the Konami code easter egg. */
+.easter { 
+content:url('https://media.giphy.com/media/xohHbwcnOhqbS/giphy.gif'); 
+position:fixed; 
+width:312px; 
+height:390px; 
+left:50%; 
+bottom:30px; 
+background-position:0px -178px; 
+z-index:1000; 
+} 
+/* FUTURE Implement this. */
