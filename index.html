@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- Using BracketsTODO. that may explain some all caps in the comments. not all of it. -->
-<!-- Made with <3 and a little bit of js -->
+<!-- Made with <3 and a little bit of js, and css. Because Django doesn't like anything. -->
 <html>
-    <head> <!-- And then The head tags because its kind of needed. -->
+    <head> <!--The head tags because its kind of needed. -->
         <!-- Ok, so firstly we need to tell Materialize to join in. Don't get left out! -->
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,24 +11,25 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="css/palette.css"/> <!-- NOTE may not be needed, may remove. -->
         <link type="text/css" rel="stylesheet" href="css/easteregg.css"/><!-- FUTURE Implement this (Noted in css too) -->
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>o/</title><!-- TODO get a better title -->
     </head>
     <body><!-- Well, we do need to stick everything somewhere! -->
-        <!-- FUTURE stick topnav here-->
         <header><!-- for the Top Navbar. Undecided if Materialize or Bootstrap would be better here. :thinking: -->
-    <div class="navbar-fixed">
-    <nav>
+            <!-- DONE <- nearly forgot that little guy, Navbar done.-->
+    <nav class="navbar-fixed light-blue">
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="hide-on-med-and-down">
-            <li class="active"><a href="#"><i class="material-icons">home</i></a></li>
-            <li><a href="p1.html"><i class="material-icons">rate_review</i></a></li>
-            <li><a href="p2.html"><i class="material-icons">rate_review</i></a></li>
-            <li><a href="p3.html"><i class="material-icons">rate_review</i></a></li>
-            <li><a href="m1.html"><i class="material-icons">rate_review</i></a></li>
-            
+            <li><a href="#"><img src="assets/GoHome.png"></img></a></li>
         </ul>
     </nav>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="#">Sass</a></li>
+        </ul>
+        
   </div>
         
         </header>
