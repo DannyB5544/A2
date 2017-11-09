@@ -57,32 +57,25 @@
                           <div class="container">
                               <h5><b>How do HTML files use access CSS?</b></h5> 
                               <!-- Trigger/Open The Modal -->
-                              <button class="button button2" id="myBtn">Open</button>
-                              <!-- The Modal -->
-                              <div id="myModal" class="modal">
-                                  <!-- Modal content -->
-                                  <div class="modal-content">
-                                      <span class="close">&times;</span>
-                                      <div class="row">
-                                          <div class="col-md-6" style="width:60%">
-                                              <img class="img-responsive" src="assets/p1poster.jpg" alt="p1img">
-                                          </div>
-                                          <div class="col-md-6" style="width:40%">
-                                              To bring those examples into light:
-                                              <p style="color: blue;margin-left: 20px">This is blue, with a small margin.</p><p>      ^- inline</p>
-                                              <img src="assets/internalCssExample.png">
-                                              <p>^internal</p>
-                                              <p></p> <!-- Empty line for spacing -->
-                                              See how they have changed, due to the CSS? In fact, the cards and <!-- A <p> Tag seems to break modal, so... Raw text it is! -->
-                                              the modal lightbox (I.e. what you are reading this from now) all rely on CSS.
-                                              <p></p>
-                                              <img src="assets/CardCode.PNG" style="width:100%">
-                                              <p>Code for the cards. (External Example)</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div> <!-- P1 assignment -->
+                              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" autofocus>Large modal</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" autofocus>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <button type="button" href="index.html"></button>
+    </div>
+  </div>
+</div>
+
+                              
+                          </div>
                       </div>
                   </div>
                   <div class="col-md-3">
@@ -91,9 +84,9 @@
                           <div class="container">
                               <h4><b>CSS Box Model</b></h4> 
                               <!-- Trigger/Open The Modal -->
-                              <button class="button button2" id="myBtn">Open</button>
+                              <button class="button button2" id="myBtn2">Open</button>
                               <!-- The Modal -->
-                              <div id="myModal" class="modal">
+                              <div id="myModal2" class="modal modal-body">
                                   <!-- Modal content -->
                                   <div class="modal-content">
                                       <span class="close">&times;</span>
@@ -116,59 +109,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script>
-            // Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-          </script> <!-- Modal lightbox script. -->
-        <script>
-            // Get the modal
-var modal2 = document.getElementById('myModal2');
-
-// Get the button that opens the modal
-var btn2 = document.getElementById("myBtn2");
-
-// Get the <span> element that closes the modal
-var span2 = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal 
-btn2.onclick = function() {
-    modal2.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span2.onclick = function() {
-    modal2.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}
-          </script> <!-- Modal lightbox script. -->
+            // Every time a modal is shown, if it has an autofocus element, focus on it.
+$('.modal').on('shown.bs.modal', function() {
+  $(this).find('[autofocus]').focus();
+});
+        </script>
     </body>
     <footer><!-- GIVE IT A KICK HARRY! -->
        <!-- TODO Footerize -> <p>Site is multipage. I dont feel like a one-page would work with how I want to build it.</p> -->
