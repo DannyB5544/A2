@@ -16,36 +16,10 @@
         <title>o/</title><!-- TODO get a better title -->
     </head>
     <body><!-- Well, we do need to stick everything somewhere! -->
-<nav class="navbar navbar-inverse"> <!-- Commence the navbar! -->
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#"><img src="assets/GoHome.png" width="30px" height="30px"> <!-- Image based buttons. oddly enough, -->
-      <a class="navbar-brand" href="p1.html"><img src="assets/p1.png" width="30px" height="30px">     <!-- Materialze is really bad at working with these. -->
-      <a class="navbar-brand" href="p2.html"><img src="assets/p2.png" width="30px" height="30px">
-      <a class="navbar-brand" href="p3.html"><img src="assets/p3.png" width="30px" height="30px">
-      <a class="navbar-brand" href="m1.html"><img src="assets/m1.png" width="30px" height="30px">
-          </a></a></a></a></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul style="list-style-position: inside; " class="nav navbar-nav">
-        <li class="visible-xs"><a href="#">Home</a></li> <!-- Visible-xs means that these buttons will only appear on mobile -->
-        <li class="visible-xs"><a href="p1.html">P1</a></li><!-- TODO There's a small issue with Indenting, either fix or exploit -->
-        <li class="visible-xs"><a href="p2.html">P2</a></li> <!-- Images from before wont work on a mobile view, so this will have to do. -->
-        <li class="visible-xs"><a href="p3.html">P3</a></li>
-        <li class="visible-xs"><a href="m1.html">M1</a></li> 
-      </ul>
-    </div>
-  </div>
-</nav>
-          <div class="container">
+          <div class="container" id="top">
               <div class="jumbotron">
-                  <h1>Welcome to the velvet room.</h1> 
-                  <p>Wait no, this isn't a room......</p> 
+                  <h1>A2 Site</h1>
+                  <p>Bought to you by the madness of nothing working and all being changed on-the-fly, courtesy of Daniel Brown.</p>
               </div>
               <p>Welcome to the site? There's coffee brewing in the kitchen, but you're probably here for the content.</p>
           </div>
@@ -53,69 +27,141 @@
               <div class="row">
                   <div class="col-md-3">
                       <div class="card">
-                          <img src="assets/p1poster.jpg" alt="p1img" style="width:100%">
+                          <img src="assets/p1poster.jpg" alt="Inline CSS Internal CSS External CSS and Examples and the original poster itself" style="width:100%">
                           <div class="container">
-                              <h5><b>How do HTML files use access CSS?</b></h5> 
-                              <!-- Trigger/Open The Modal -->
-                              <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<!-- Large modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" autofocus>Large modal</button>
-
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" autofocus>
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <button type="button" href="index.html"></button>
-    </div>
-  </div>
-</div>
-
-                              
+                              <h5><b>How do HTML files use access CSS?</b></h5>
+                              </div><p id="p1"></p> <!-- ID is here to avoid the top clipping under the navbar.-->
+                              <button class="button button2"><a href="#p1">Open!</a></button>
                           </div>
-                      </div>
-                  </div>
+                            </div> <!-- P1 card -->
+                <div class="col-md-3">
+                      <div class="card">
+                          <img src="assets/p2poster.jpg" alt="CSS Box Model including how it works" style="width:100%">
+                          <div class="container">
+                              <h5><b>The CSS box model</b></h5>
+                              <button class="button button2"><a href="#p2">Open!</a></button>
+                          </div>
+                            </div>
+                  </div><!-- P2 card -->
                   <div class="col-md-3">
                       <div class="card">
-                          <img src="assets/p2poster.jpg" alt="p2img" style="width:100%">
+                          <img src="assets/p3poster.jpg" alt="Bassics of javascript JS varaibles and other basics involved." style="width:100%">
                           <div class="container">
-                              <h4><b>CSS Box Model</b></h4> 
-                              <!-- Trigger/Open The Modal -->
-                              <button class="button button2" id="myBtn2">Open</button>
-                              <!-- The Modal -->
-                              <div id="myModal2" class="modal modal-body">
-                                  <!-- Modal content -->
-                                  <div class="modal-content">
-                                      <span class="close">&times;</span>
-                                      <div class="row">
-                                          <div class="col-md-6" style="width:60%">
-                                              <img class="img-responsive" src="assets/p2poster.jpg" alt="p2img">
-                                          </div>
-                                          <div class="col-md-6" style="width:40%">
-                                              <p>Sample text.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
+                              <h5><b>Fundamentatls of a scripting Language</b></h5>
+                              <button class="button button2"><a href="#p3">Open!</a></button>
                           </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+                            </div>
+                </div> <!-- P3 card -->
+                <div class="col-md-3">
+                      <div class="card">
+                          <img src="assets/p3poster.jpg" alt="Bassics of javascript JS varaibles and other basics involved." style="width:100%">
+                          <div class="container">
+                              <h5><b>Fundamentatls of a scripting Language</b></h5>
+                              <button class="button button2"><a href="#m1">Open!</a></button>
+                          </div>
+                            </div> <!-- P1 card -->
+                </div> <!-- M1 card -->
+            </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h1>How do HTML files access CSS?</h1>
+                    To bring those examples into light:
+                    <p style="color: blue;margin-left: 20px">This is blue, with a small margin. In other words, an example of Inline text.</p>
+                    <img src="assets/internalCssExample.png">
+                    <p>This is an example of that (Horrible looking) Internal CSS.</p>
+                    <p></p> <!-- Empty line for spacing -->
+                    See how they have changed, due to the CSS? In fact, the cards and <!-- If I dont need to format it, I dont really need <p> tags -->
+                    the modal lightbox (I.e. what you are reading this from now) all rely on CSS.
+                    <p></p>
+                    <img src="assets/CardCode.PNG">
+                    <p>Code for the cards. (External Example)</p>
+                    <p>But in larger systems of CSS, like bootstrap, '.min' files exist which contain all of bootstraps CSS in a conveinient small package. Not good for human reading, but for the device you are viewing the site on, its perfect.</p>
+                    <img src="assets/lotsOfNumbers.png">
+                    <p>Thats a lot of code for 14 lines.</p>
+                    <p>Just remember: <xmp><p style="stuff"></p></xmp> is inline, <xmp><style></style></xmp> is internal, and any text/css file links in the header is usually external CSS!</p>
+                    <p id="p2"></p> <!-- anchor point for P2 -->
+                </div>
+            </div>
+                <div class="col-md-6">
+                    <div>
+                    <img src="assets/p1poster.jpg" width="85%">
+                    </div> <!-- DONE p1 intergration. -->
+                </div> <!-- And thats  P1, kids -->
+    </div> <!-- P1 code -->
+        <div class="row">
+                <div class="col-md-5">
+                    <div align="right">
+                    <img src="assets/p2poster.jpg" width="95%">
+                    </div> <!-- DONE p1 intergration. -->
+                </div> <!-- And thats  P1, kids -->
+            <div class="col-md-6">
+                <div class="card">
+                    <h1>The CSS box model.</h1>
+                    <p>CSS, Also known as Cascading Style Sheet or "WHY IS IT NOT WORKING" before realising you forgot to link it, is a great way of changing content flow colour... And just about everything.</p>
+                    <p>As the poster shows, a traditional CSS box Model Contains its content within padding, border, and a margin. These are all adjustable, and are usually just used to ensure everything is spaced out normally.</p>
+                    <p>For instance, we could set div (therefore anything in a div too) to always be 300px wide, have a 25px thick green border, and add 25px to margin and padding, like so:</p>
+                     <!-- Just to be sure I dont accidentally start any dumb code. -->
+                    <xmp>div {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}</xmp>
+                    <p>Or, if I wanted to only affect one div...</p>
+                    <xmp><div style="width:300px;border:25px solid green;padding:25px;margin:25px;">Hi!</div></xmp>
+                    <p>Alternatively, we can create a custom class in the internal or external CSS that we can apply to whichever div's we choose.</p>
+                    <!-- Just to be sure I dont accidentally start any dumb code. -->
+                    <xmp>.div-custom {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}</xmp>
+                    <p>But what about that code in action? Here it is, inline:</p>
+                    <div style="width:300px;border:25px solid green;padding:25px;margin:25px;">
+                        <p>Hello there!</p>
+                    </div>
+                    <p></p>
+                    <p id="p3"></p> <!-- anchor point for P3 -->
+                </div>         
+    </div> <!-- P1 code -->
+        </div> <!-- P2 Code -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <p>Although the usage of the javascript is different in html than it is standalone, there are still some basics.</p>
+                    <p>Scripting Languages allow users to write a program for a computer to interpret and run. Computers can only understand code, so scripting languages tend to be the middle ground between machine-friendly code and human-readable.</p>
+                    <p>Variables are the "bread and butter" of any coding language. They can store data to be used later, whether its for a calculation, to print specific text, to be saved to a file, or launched into the infinite void of space.(i.e. deleted)</p>
+                    <p>Variables come in all sorts of formats, and their formats can be changed on the fly. For instance:</p>
+                    <img src="assets/dataTypes.PNG" width="95%">
+                    <p>Its worth noting that by default, most things are stored as "strings"(not shown on the image) Which can store virtually anything, and treats it as plain text.</p>
+                    <p>Functions are also a commonly used thing within a scripting language to do... anything. Chances are, everything you do will be contained within a function of some sort.</p>
+                    <p>If we take Python as an example, you can either 'def'(define) a function, or use 'aysnc def'(which allows the function to be ran simultaneously with others)</p>
+                    <p>For example, if we were to take this code Snippet from "Red-Discord Bot":</p>
+                    <img src="assets/functionsample.PNG" width="30%">
+                    <a href="https://github.com/Cog-Creators/Red-DiscordBot/blob/develop/cogs/general.py#L47" class="button button2">From here.</a>
+                    <p>The code, in short:</p>
+                    <xmp>
+- 'aysnc def ping(self)' Defines the function "ping".
+- 'await self.bot.say("pong.")' Says "pong" when the function is triggered.
+                    </xmp>
+                    <p>Although there is more, I've only highlighted the main parts. And when the function is called...</p>
+                    <img src="assets/discordfunction.PNG">
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div align="left">
+                <img src="assets/p3poster.jpg" width="92%">
+                    </div>
+                </div>
+        </div> <!-- P3 Code -->
         <!-- TODO Easter egg at end of body. Come back to later. -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script>
-            // Every time a modal is shown, if it has an autofocus element, focus on it.
-$('.modal').on('shown.bs.modal', function() {
-  $(this).find('[autofocus]').focus();
-});
-        </script>
-    </body>
-    <footer><!-- GIVE IT A KICK HARRY! -->
-       <!-- TODO Footerize -> <p>Site is multipage. I dont feel like a one-page would work with how I want to build it.</p> -->
+        </div>
+    </body><!-- GIVE IT A KICK HARRY! -->
+    <footer>
+        <!-- NOTE - Do i even want/need a footer? -->
     </footer>
-</html> <!-- DONE base frame --> <!-- NOTE The comment cleanup is gonna be a LOT -->
+</html> <!-- NOTE General Progress on site #####=---- 55% -->
