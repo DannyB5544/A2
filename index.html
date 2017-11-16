@@ -7,61 +7,70 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <!--Import css files -->
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="css/palette.css"/> <!-- NOTE may not be needed, may remove. -->
-        <link type="text/css" rel="stylesheet" href="css/easteregg.css"/><!-- FUTURE Implement this (Noted in css too) -->
         <link rel="stylesheet" href="css/style.css"/>
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>o/</title><!-- TODO get a better title -->
+        <title>Hmmm....</title> <!-- OHNO Oh lordy why can't I think of anything -->
     </head>
     <body><!-- Well, we do need to stick everything somewhere! -->
+        <p id="pagetop"></p>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+           <a href="#top" style="font-size: 44px; color: white;">Top!</a>
+        </nav>
           <div class="container" id="top">
               <div class="jumbotron">
-                  <h1>A2 Site</h1>
-                  <p>Bought to you by the madness of nothing working and all being changed on-the-fly, courtesy of Daniel Brown.</p>
+                  <h1 style="color: white; text-shadow: 2px 2px #ff0000;">Flavour Text is Overdone anyway!</h1>
+                  <p style="color: white; text-shadow: 2px 2px #ff0000;">Bought to you by the madness of nothing working and all being changed on-the-fly, courtesy of Daniel Brown.</p>
+                  <br>
+                  <br>
+                  <br>
               </div>
               <p>Welcome to the site? There's coffee brewing in the kitchen, but you're probably here for the content.</p>
           </div>
           <div>
               <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-sm-4">
                       <div class="card">
                           <img src="assets/p1poster.jpg" alt="Inline CSS Internal CSS External CSS and Examples and the original poster itself" style="width:100%">
                           <div class="container">
-                              <h5><b>How do HTML files use access CSS?</b></h5>
-                              </div><p id="p1"></p> <!-- ID is here to avoid the top clipping under the navbar.-->
-                              <button class="button button2"><a href="#p1">Open!</a></button>
+                              <button class="button button2" style="align-self: center;"><a href="#p1">Open!</a></button>
                           </div>
                             </div> <!-- P1 card -->
-                <div class="col-md-3">
+                  </div>
+                <div class="col-sm-4">
                       <div class="card">
                           <img src="assets/p2poster.jpg" alt="CSS Box Model including how it works" style="width:100%">
                           <div class="container">
-                              <h5><b>The CSS box model</b></h5>
                               <button class="button button2"><a href="#p2">Open!</a></button>
                           </div>
                             </div>
                   </div><!-- P2 card -->
-                  <div class="col-md-3">
+                  <div class="col-sm-4">
                       <div class="card">
                           <img src="assets/p3poster.jpg" alt="Bassics of javascript JS varaibles and other basics involved." style="width:100%">
                           <div class="container">
-                              <h5><b>Fundamentatls of a scripting Language</b></h5>
                               <button class="button button2"><a href="#p3">Open!</a></button>
                           </div>
                             </div>
                 </div> <!-- P3 card -->
-                <div class="col-md-3">
+              </div>
+              <div class="row">
+                  <div class="col-md-4"></div>
+                    <div class="col-sm-4">
                       <div class="card">
-                          <img src="assets/p3poster.jpg" alt="Bassics of javascript JS varaibles and other basics involved." style="width:100%">
+                          <img src="assets/cssBadge.png" alt="Bassics of javascript JS varaibles and other basics involved." style="width:100%">
+                          <p>Implementation Types of CSS</p>
                           <div class="container">
-                              <h5><b>Fundamentatls of a scripting Language</b></h5>
                               <button class="button button2"><a href="#m1">Open!</a></button>
                           </div>
-                            </div> <!-- P1 card -->
+                            </div>
                 </div> <!-- M1 card -->
+                  <div class="col-md-4"></div>
             </div>
+            <p id="p1"></p> <!-- ID is here to avoid the top clipping under the navbar.-->
+              <br>
+              <br>
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
@@ -71,8 +80,8 @@
                     <img src="assets/internalCssExample.png">
                     <p>This is an example of that (Horrible looking) Internal CSS.</p>
                     <p></p> <!-- Empty line for spacing -->
-                    See how they have changed, due to the CSS? In fact, the cards and <!-- If I dont need to format it, I dont really need <p> tags -->
-                    the modal lightbox (I.e. what you are reading this from now) all rely on CSS.
+                    See how they have changed, due to the CSS? In fact, the cards <!-- If I dont need to format it, I dont really need <p> tags -->
+                    (I.e. what you are reading this from now) all rely on CSS.
                     <p></p>
                     <img src="assets/CardCode.PNG">
                     <p>Code for the cards. (External Example)</p>
@@ -89,11 +98,14 @@
                     </div> <!-- DONE p1 intergration. -->
                 </div> <!-- And thats  P1, kids -->
     </div> <!-- P1 code -->
+              <br>
+              <br>
+              <br>
         <div class="row">
                 <div class="col-md-5">
                     <div align="right">
                     <img src="assets/p2poster.jpg" width="95%">
-                    </div> <!-- DONE p1 intergration. -->
+                    </div>
                 </div> <!-- And thats  P1, kids -->
             <div class="col-md-6">
                 <div class="card">
@@ -127,10 +139,14 @@
                 </div>         
     </div> <!-- P1 code -->
         </div> <!-- P2 Code -->
+              <br>
+              <br>
+              <br>
+              
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <p>Although the usage of the javascript is different in html than it is standalone, there are still some basics.</p>
+                    <h1>Fundamentals of a scripting language</h1>
                     <p>Scripting Languages allow users to write a program for a computer to interpret and run. Computers can only understand code, so scripting languages tend to be the middle ground between machine-friendly code and human-readable.</p>
                     <p>Variables are the "bread and butter" of any coding language. They can store data to be used later, whether its for a calculation, to print specific text, to be saved to a file, or launched into the infinite void of space.(i.e. deleted)</p>
                     <p>Variables come in all sorts of formats, and their formats can be changed on the fly. For instance:</p>
@@ -153,10 +169,19 @@
                 <div class="col-md-6">
                 <div align="left">
                 <img src="assets/p3poster.jpg" width="92%">
+                    <p id="m1"></p>
                     </div>
                 </div>
         </div> <!-- P3 Code -->
-        <!-- TODO Easter egg at end of body. Come back to later. -->
+              <br> <!-- DONE Pass assignments added. -->
+              <br>
+              <br>
+        <div class="row col-md-11 card" width="90%">
+            <iframe src="https://docs.google.com/a/student.southstaffs.ac.uk/document/d/e/2PACX-1vR92lmWsohWmYTEe1nryKtAhYx5fQVgTPLpq_oqQm7gYmfdXqJV5aEFKQEZw3uyvBhfqtGsZ2gD9hVe/pub?embedded=true" width="90%" height="800px"></iframe>
+        </div> <!-- M1 "code" --><!-- TODO See if can improve this because bloody hell its basic -->
+              <br>
+              <br>
+              <br>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
         </div>
@@ -164,4 +189,4 @@
     <footer>
         <!-- NOTE - Do i even want/need a footer? -->
     </footer>
-</html> <!-- NOTE General Progress on site #####=---- 55% -->
+</html> <!-- NOTE General Progress on site ########-- 80% -->
