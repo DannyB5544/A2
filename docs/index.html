@@ -180,6 +180,29 @@ In this section I am going to assess different implementation styles for CSS. Th
 </p>
             <h3>Which one to use?</h3>
             <p>There’s 3 types of CSS to choose from - Inline, which is quick and simple, Internal, which affects an entire page, and External, which can make large changes on demand.</p>
+            <h4 style="margin-left: 25px;">Inline CSS</h4>
+            <p>INLINE CSS- Here, the CSS code is in the line it is to be applied on. Quick, easy, and compact, with good readability - it's more for one-off pieces rather than an entire page, but it can take priority over the other css formats. Also since it's inline, you don't have any extra files to deal with, and you don't have to tweak an internal css in your header tag either. It's also pretty quick, and great for testing! However, it's going to get tiring if you have inline css on every element, and the priority of inline means that it can overwrite styles set by internal and external css. At that point, use a different method unless you have a good reason.</p>
+            <xmp><p style="color: blue; margin-left: 25px;"> The text is now blue, and looks indented. Neat.</p></xmp>
+            <p style="color: blue; margin-left: 25px;"> The text is now blue, and looks indented. Neat.</p>
+            <h4 style="margin-left: 25px;">Internal CSS</h4>
+            <p> An Internal style sheet means the code is stored in the header section of the site. This is much better than inline because any CSS used within the page will inherit the formatting, Like making all the text red, or making every single letter link to the hitchhiker's guide to the galaxy.
+Internal is useful as it allows people to test the site’s css quickly and effectively. It also means that, unlike inline, you don’t need to add css to every single element. Mind your loading times though, as internal CSS can slow you down to the pace of a snail in treacle if not careful. It can also make the websites file size bigger, which will then also contribute to wondering if you need to upgrade your internet plan for the 3rd time this month.
+</p>
+            <xmp>	<style>
+		p{margin: 20px;}
+	</style>
+</xmp>
+            <h4 style="margin-left: 25px;">External</h4>
+            <p>An external Style sheet is when the css code is stored in another file, which can then be loaded into the html file with this magic line:</p>
+            <xmp><link ref="stylesheet" href="style.css"></xmp>
+            <p>See? The External file is then set up almost identically to how the internal one looks, but without any html. After all ,they aren’t the same thing.
+An external style sheet can be written in any editor program. The file should not contain HTML tags and should be saved with a .CSS extension. 
+Yes, it does save space, and it also means a cleaner code in general, but External is not really needed for small, single page things.
+</p>
+            <xmp>hr {color:blue;}
+p {margin-right:25px;}
+body (background-image:url("image.gif");}
+</xmp>
         </div> <!-- M1 "code" --><!-- TODO See if can improve this because bloody hell its basic -->
               <br>
               <br>
