@@ -11,10 +11,10 @@ img {
     border-radius: 5px 5px 5px 5px;
 }
 
-.button {
-    background-color: #00e5ee;
+.button { /* Global button tweako's. Whaddya mean, "tweako's" ain't a word... */
+    background-color: #00e5ee; /* Box Colour, not text colour. */
     border: none;
-    color: white;
+    color: white; /*Text colour, not Box colour */
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -24,17 +24,19 @@ img {
 }
 
 .button1 {border-radius: 2px;}
-.button2 {border-radius: 4px;}
+.button2 {border-radius: 4px;} /*Probably the only one I'm going to use, but hey, options! */
 .button3 {border-radius: 8px;}
-.button4 {border-radius: 2px; background-color: #00e5ee;}
+.button4 {border-radius: 2px; background-color: #00e5ee;} /*Needed elswhere */
 .button5 {border-radius: 50%;}
 .jumbotron {
-background-image: url("../assets/mindtheeyes.gif");
+background-image: url("../assets/mindtheeyes.gif"); /* yeah, sorry about that */
 background-size: cover;}
 xmp {
-    font-size: 12px;
+    font-size: 12px; /* Forces the XMP font size to something not awful.
+                    It is worth noting that XMP ignores the html code, so issues persist onsmaller screens.
+                    Have I found a fix? Nope. */
 }
-.footer {
+.footer { /* PROBABLY fixes the footer. Probably. */
     position: fixed;
     bottom: 0;
     right: 0;

@@ -3,24 +3,28 @@
 <html>
     <head> <!--The head tags because its kind of needed. -->
         <!-- Ok, so firstly we need to tell Materialize to join in. Don't get left out! -->
-        <!--Import Google Icon Font-->
+        <!--Import Font. Jeez, I'm not downloading it. Even though Ubuntu is the best font. Probably. -->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <!--Import css files -->
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="css/palette.css"/> <!-- NOTE may not be needed, may remove. -->
         <link rel="stylesheet" href="css/style.css"/>
-        <!--Let browser know website is optimized for mobile-->
+        <!--Let browser know website is optimized for mobile. Kinda. Probably.-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Hmmm....</title> <!-- OHNO Oh lordy why can't I think of anything -->
+        <title>Hmmm....</title> <!-- OHNO Oh lordy why can't I think of anything useful for a title! -->
     </head>
     <body><!-- Well, we do need to stick everything somewhere! -->
         <p id="pagetop"></p>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar. SO MUCH easier than with Materialize, that things awful... -->
            <a href="#top" style="font-size: 44px; color: white;">Top!</a>
+            <a href="#p1" style="font-size: 22px; color: white;">Html using CSS?</a>
+            <a href="#p2" style="font-size: 22px; color: white;">The CSS box model?</a>
+            <a href="#p3" style="font-size: 22px; color: white;">Scripting Languages?</a>
+            <a href="#m1" style="font-size: 22px; color: white;">Fundamentals of Scripting?</a>
         </nav>
           <div class="container" id="top">
-              <div class="jumbotron">
-                  <h1 style="color: white; text-shadow: 2px 2px #ff0000;">Flavour Text is Overdone anyway!</h1>
+              <div class="jumbotron"> <!-- You may notice that The Jumbotron has a... background. I'll leave it at that. -->
+                  <h1 style="color: white; text-shadow: 2px 2px #ff0000;">Flavour Text is Overdone anyway!</h1> <!-- Note- thats red. -->
                   <p style="color: white; text-shadow: 2px 2px #ff0000;">Bought to you by the madness of nothing working and all being changed on-the-fly, courtesy of Daniel Brown.</p>
                   <br>
                   <br>
@@ -30,8 +34,8 @@
           </div>
           <div>
               <div class="row">
-                  <div class="col-sm-4">
-                      <div class="card">
+                  <div class="col-sm-4"> <!-- And now, ladies and Gentlemen, boys and girls, I bring you..... -->
+                      <div class="card"> <!-- My navigation. Yeah. Temp measure, Top nav will probs be done. Probably. -->
                           <img src="assets/p1poster.jpg" alt="Inline CSS Internal CSS External CSS and Examples and the original poster itself" style="width:100%">
                           <div class="container">
                               <button class="button button2" style="align-self: center;"><a href="#p1">Open!</a></button>
@@ -61,7 +65,7 @@
                         <p style="margin-top: 20px;"></p>
                       <div class="card">
                           <img src="assets/cssBadge.png" alt="Bassics of javascript JS varaibles and other basics involved." style="width:100%;">
-                          <p>Implementation Types of CSS</p>
+                          <p>Implementation Types of CSS</p> <!-- *sigh* couldn't find a better image.... -->
                           <div class="container">
                               <button class="button button2"><a href="#m1">Open!</a></button>
                           </div>
@@ -69,11 +73,11 @@
                 </div> <!-- M1 card -->
                   <div class="col-md-4"></div>
             </div> <!-- M1 card -->
-            <p id="p1"></p> <!-- ID is here to avoid the top clipping under the navbar.-->
-              <br>
+            <p id="p1"></p> <!-- ID is here to avoid the top clipping under the navbar. -->
+              <br> <!-- NOTE to self - see if "brrrrr" can be made valid. I hope so. -->
               <br>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6"> <!-- Oh look, Finally, actual content. This was starting to look like a reaction channel on youtube. -->
                 <div class="card">
                     <h1>How do HTML files access CSS?</h1>
                     To bring those examples into light:
@@ -95,7 +99,7 @@
             </div>
                 <div class="col-md-6">
                     <div>
-                    <img src="assets/p1poster.jpg" width="85%" style="margin-top: 30px;">
+                    <img src="assets/p1poster.jpg" width="85%" style="margin-top: 30px;"> <!-- Im  somewhat sure Margins are breaking something. Who knows what. -->
                     </div> <!-- DONE p1 intergration. -->
                 </div> <!-- And thats  P1, kids -->
     </div> <!-- P1 code -->
@@ -107,7 +111,7 @@
                 </div> <!-- And thats  P1, kids -->
             <div class="col-md-6">
                 <div class="card">
-                    <h1>The CSS box model.</h1>
+                    <h1>The CSS box model.</h1> <!-- Big fish, little dish, It's 5:30pm and I'm hungry... -->
                     <p>CSS, Also known as Cascading Style Sheet or "WHY IS IT NOT WORKING" before realising you forgot to link it, is a great way of changing content flow colour... And just about everything.</p>
                     <p>As the poster shows, a traditional CSS box Model Contains its content within padding, border, and a margin. These are all adjustable, and are usually just used to ensure everything is spaced out normally.</p>
                     <p>For instance, we could set div (therefore anything in a div too) to always be 300px wide, have a 25px thick green border, and add 25px to margin and padding, like so:</p>
@@ -121,7 +125,7 @@
                     <p>Or, if I wanted to only affect one div...</p>
                     <xmp class="visible-md-block, hidden-md"><div style="width:300px;border:25px solid green;padding:25px;margin:25px;">Hi!</div></xmp>
                     <p>Alternatively, we can create a custom class in the internal or external CSS that we can apply to whichever div's we choose.</p>
-                    <!-- Just to be sure I dont accidentally start any dumb code. -->
+                    <!-- Just to be sure I dont accidentally start any dumb code. Deja vu? -->
                     <xmp>.div-custom {
     width: 300px;
     border: 25px solid green;
@@ -129,7 +133,7 @@
     margin: 25px;
 }</xmp>
                     <p>But what about that code in action? Here it is, inline:</p>
-                    <div style="width:300px;border:25px solid green;padding:25px;margin:25px;">
+                    <div style="width:300px;border:25px solid green;padding:25px;margin:25px;"> <!-- Only feels fair to. -->
                         <p>Hello there!</p>
                     </div>
                     <p></p>
@@ -140,24 +144,24 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <h1>Fundamentals of a scripting language</h1>
+                    <h1>Fundamentals of a scripting language</h1> <!-- If only Django worked so i could provide nice examples.. Damn you, Microsoft! -->
                     <p>Scripting Languages allow users to write a program for a computer to interpret and run. Computers can only understand code, so scripting languages tend to be the middle ground between machine-friendly code and human-readable.</p>
                     <p>Variables are the "bread and butter" of any coding language. They can store data to be used later, whether its for a calculation, to print specific text, to be saved to a file, or launched into the infinite void of space.(i.e. deleted)</p>
                     <p>Variables come in all sorts of formats, and their formats can be changed on the fly. For instance:</p>
-                    <img src="assets/dataTypes.PNG" width="95%">
+                    <img src="assets/dataTypes.PNG" width="95%"> <!-- It might be worth mentioning finding the width's and stuff was A PAIN -->
                     <p>Its worth noting that by default, most things are stored as "strings"(not shown on the image) Which can store virtually anything, and treats it as plain text.</p>
                     <p>Functions are also a commonly used thing within a scripting language to do... anything. Chances are, everything you do will be contained within a function of some sort.</p>
                     <p>If we take Python as an example, you can either 'def'(define) a function, or use '<a data-toggle="tooltip" title="Part of the asyncio package">async</a> def'(which allows the function to be ran simultaneously with others)</p>
                     <p>For example, if we were to take this code Snippet from "Red-Discord Bot":</p>
                     <img src="assets/functionsample.PNG" width="30%">
                     <a href="https://github.com/Cog-Creators/Red-DiscordBot/blob/develop/cogs/general.py#L47" class="button button2">From here.</a>
-                    <p>The code, in short:</p>
+                    <p>The code, in short:</p> <!-- XMP is both the best and most annoying thing this side of the sun. -->
                     <xmp>
 - 'aysnc def ping(self)' Defines the function "ping".
 - 'await self.bot.say("pong.")' Says "pong" when the function is triggered.
                     </xmp>
                     <p>Although there is more, I've only highlighted the main parts. And when the function is called...</p>
-                    <img src="assets/discordfunction.PNG">
+                    <img src="assets/discordfunction.PNG"> <!-- DONE Not use javascript as examples - use something I actually KNOW instead. -->
                 </div>
                 </div>
                 <div class="col-md-6">
@@ -170,9 +174,9 @@
               <br> <!-- DONE Pass assignments added. -->
 
         <div class="row col-md-11 card" width="90%">
-            <h1>Implementation types of CSS</h1>
+            <h1>Implementation types of CSS</h1> <!-- OHNO its wall of text time! EVERYBODY RUN! -->
             <h3>Introduction.</h3>
-            <p> Introduction
+            <p>
 In this section I am going to assess different implementation styles for CSS. The different implementation styles in which I am going to talk about include: Internal Style Sheets, External Style sheets and Inline Style sheets. CSS (Cascading Style Sheets) allows a web developer to design a website in terms of the colour and design. CSS does not "create" anything all it does it decorates and align stuff on the web page. HTML (Hyper Text Mark-up Language) is responsible for the construction and the total output of a web page. As mentioned earlier there are three sections in HTML and I will go in more detail below. The main job of styles is to define what the HTML elements will look like; therefore CSS is built into all HTML tags. 
 </p>
             <h3>Which one to use?</h3>
@@ -200,17 +204,24 @@ Yes, it does save space, and it also means a cleaner code in general, but Extern
 p {margin-right:25px;}
 body (background-image:url("image.gif");}
 </xmp>
-        </div> <!-- M1 "code" --><!-- TODO See if can improve this because bloody hell its basic -->
+        </div> <!-- M1 "code" --><!-- DONE See if can improve this because bloody hell its basic -->
               <br>
               <br>
               <br>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- So everything.. er... works.. -->
+        <script src="js/bootstrap.js"></script> <!-- For the Good framework. Looking at you, Materialize. -->
         </div>
-        <footer class="navbar-default navbar-inverse navbar-fixed-bottom">
+        <footer class="navbar-default navbar-inverse navbar-fixed-bottom"> <!-- Basic footer. I didn't really want a footer, so.... -->
   <div class="container-fluid">
     <span style="color: white;">By Daniel Brown. Almost a shame its the MIT license..</span>
   </div>
 </footer>
     </body><!-- GIVE IT A KICK HARRY! -->
-</html> <!-- NOTE General Progress on site ########## 1000000000% -->
+</html> <!-- NOTE Its The end of the Road, captain! -->
+
+<!-- useless trivia -->
+<!-- The word "Probably" was used 8 times between the CSS and HTML. Thats still 8 too many.
+ -- Well, if we want to count the times I've said it out loud... about 30?
+ -- The framework has changed more times than I want to admit
+ -- I still don't like footers. 
+ -- 9 <br>'s were used. Shame these Breaks don't come with a kitkat. -->
