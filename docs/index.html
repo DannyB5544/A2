@@ -2,16 +2,15 @@
 <!-- Made with <3 and a little bit of js, and css. Because Django doesn't like anything. -->
 <html>
     <head> <!--The head tags because its kind of needed. -->
-        <!-- Ok, so firstly we need to tell Materialize to join in. Don't get left out! -->
         <!--Import Font. Jeez, I'm not downloading it. Even though Ubuntu is the best font. Probably. -->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <!--Import css files -->
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="css/palette.css"/> <!-- NOTE may not be needed, may remove. -->
         <link rel="stylesheet" href="css/style.css"/>
-        <!--Let browser know website is optimized for mobile. Kinda. Probably.-->
+        <!--Let browser know website is optimized for mobile. Probably.-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Hmmm....</title> <!-- OHNO Oh lordy why can't I think of anything useful for a title! -->
+        <title>Hmmm....</title> <!-- NOTE No creative talent went into deciding a title. -->
     </head>
     <body><!-- Well, we do need to stick everything somewhere! -->
         <p id="pagetop"></p>
@@ -20,7 +19,7 @@
             <a href="#p1" style="font-size: 22px; color: white;">Html using CSS?</a>
             <a href="#p2" style="font-size: 22px; color: white;">The CSS box model?</a>
             <a href="#p3" style="font-size: 22px; color: white;">Scripting Languages?</a>
-            <a href="#m1" style="font-size: 22px; color: white;">Fundamentals of Scripting?</a>
+            <a href="#m1" style="font-size: 22px; color: white;">Fundamentals of Scripting?</a> <!-- Questioning everything actually kept it sized right. neat -->
         </nav>
           <div class="container" id="top">
               <div class="jumbotron"> <!-- You may notice that The Jumbotron has a... background. I'll leave it at that. -->
@@ -35,7 +34,7 @@
           <div>
               <div class="row">
                   <div class="col-sm-4"> <!-- And now, ladies and Gentlemen, boys and girls, I bring you..... -->
-                      <div class="card"> <!-- My navigation. Yeah. Temp measure, Top nav will probs be done. Probably. -->
+                      <div class="card"> <!-- CSS cards. Turns out the only thing I wanted materialize for doesnt need materialize. -->
                           <img src="assets/p1poster.jpg" alt="Inline CSS Internal CSS External CSS and Examples and the original poster itself" style="width:100%">
                           <div class="container">
                               <button class="button button2" style="align-self: center;"><a href="#p1">Open!</a></button>
@@ -77,17 +76,17 @@
               <br> <!-- NOTE to self - see if "brrrrr" can be made valid. I hope so. -->
               <br>
         <div class="row">
-            <div class="col-md-6"> <!-- Oh look, Finally, actual content. This was starting to look like a reaction channel on youtube. -->
+            <div class="col-md-6"> <!-- Oh look, Finally, actual content.-->
                 <div class="card">
                     <h1>How do HTML files access CSS?</h1>
                     To bring those examples into light:
                     <p style="color: blue;margin-left: 20px">This is blue, with a small margin. In other words, an example of Inline text.</p>
                     <img src="assets/internalCssExample.png">
                     <p>This is an example of that (Horrible looking) Internal CSS.</p>
-                    <p></p> <!-- Empty line for spacing -->
+                    <br>
                     See how they have changed, due to the CSS? In fact, the cards <!-- If I dont need to format it, I dont really need <p> tags -->
                     (I.e. what you are reading this from now) all rely on CSS.
-                    <p></p>
+                    <br>
                     <img src="assets/CardCode.PNG">
                     <p>Code for the cards. (External Example)</p>
                     <p>But in larger systems of CSS, like bootstrap, '.min' files exist which contain all of bootstraps CSS in a conveinient small package. Not good for human reading, but for the device you are viewing the site on, its perfect.</p>
@@ -204,7 +203,7 @@ Yes, it does save space, and it also means a cleaner code in general, but Extern
 p {margin-right:25px;}
 body (background-image:url("image.gif");}
 </xmp>
-        </div> <!-- M1 "code" --><!-- DONE See if can improve this because bloody hell its basic -->
+        </div> <!-- M1 "code" --><!-- DONE improved this because bloody hell it was basic -->
               <br>
               <br>
               <br>
